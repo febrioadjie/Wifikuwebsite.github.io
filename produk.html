@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="PT Wifiku Indonesia - Menyediakan berbagai pilihan router terbaik untuk kebutuhan internet di rumah atau kantor." />
+  <title>10 Produk Router PT Wifiku Indonesia</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --primary: #2c97de;
+      --primary-dark: #227db3;
+      --accent: #ffcd00;
+      --bg: #f4f7fa;
+      --white: #ffffff;
+      --gray: #666;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      --transition: 0.3s ease;
+    }
+
+    /* Reset & Global */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg);
+      color: var(--gray);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; transition: color var(--transition); }
+    a:hover { color: var(--primary-dark); }
+    h1, h2 {
+      text-align: center; margin-bottom: 1rem;
+      color: var(--primary-dark);
+    }
+    p { margin-bottom: 1rem; }
+    .container {
+      width: min(90%, 1200px);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* === HEADER MODERN & ELEGAN === */
+    header {
+      background: var(--white);
+      position: sticky; top: 0; z-index: 100;
+      box-shadow: var(--shadow);
+      padding: 0.75rem 0;
+    }
+    header .container {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .logo img {
+      height: 48px; width: 48px;
+      object-fit: cover; border-radius: 8px;
+    }
+    .logo span {
+      font-size: 1.4rem; font-weight: 700;
+      background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    nav {
+      display: flex; gap: 1.5rem;
+    }
+    nav a {
+      position: relative; font-weight: 600;
+      padding: 0.5rem 0.75rem; border-radius: var(--radius);
+      color: var(--gray); transition: background var(--transition), color var(--transition);
+    }
+    nav a::after {
+      content: '';
+      position: absolute; left: 0; bottom: -4px;
+      width: 0; height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+      transition: width var(--transition);
+      border-radius: 2px;
+    }
+    nav a:hover {
+      color: var(--primary-dark);
+      background: rgba(44, 151, 222, 0.05);
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Modern & Elegan Intro Section */
+    .intro.container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px 20px;
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .intro.container h1 {
+      font-family: 'Georgia', serif;
+      font-size: 2.8rem;
+      color: var(--primary);
+      margin-bottom: 16px;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+    .intro.container h1::after {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+      bottom: 0; left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+    .intro.container p {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 1.125rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    /* Tables & Promo & Buy Button (unchanged) */
+    table {
+      width: 100%; border-collapse: collapse; margin: 2rem 0;
+    }
+    th, td {
+      padding: 0.75rem; border: 1px solid #ddd;
+    }
+    th {
+      background: var(--primary); color: var(--white);
+      font-weight: 600;
+    }
+    tr:nth-child(even) { background: #fafafa; }
+    .promo {
+      position: relative; overflow: hidden;
+      background: var(--white); border-radius: var(--radius);
+      box-shadow: var(--shadow); margin: 3rem 0; padding: 1rem 0;
+    }
+    .promo p {
+      white-space: nowrap; display: inline-block;
+      padding-left: 100%; animation: scroll-text 15s linear infinite;
+      font-weight: 600; color: var(--primary-dark);
+    }
+    @keyframes scroll-text {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    .btn-buy {
+      position: fixed; bottom: 1.5rem; right: 1.5rem;
+      background: var(--accent); color: #333;
+      padding: 0.75rem 1.25rem; border-radius: var(--radius);
+      box-shadow: var(--shadow); font-weight: 600;
+      z-index: 1000; transition: background var(--transition);
+    }
+    .btn-buy:hover { background: #e6b800; }
+    @media (max-width: 600px) {
+      header .container { flex-direction: column; gap: 1rem; }
+      .promo p { animation-duration: 10s; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header (UPDATED) -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/lebarwifikulogo.jpg" alt="Logo Wifiku" />
+        <span>PT Wifiku Indonesia</span>
+      </div>
+      <nav>
+        <a href="beranda.html">Beranda</a>
+        <a href="produk.html">Produk</a>
+        <a href="CS.html">Customer Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <section class="intro container">
+    <h1>5 Produk Router Terbaik</h1>
+    <p>
+      Temukan pilihan router unggulan kami—ideal untuk rumah, kantor, maupun bisnis. 
+      Berikut 5 produk router terbaik dari PT Wifiku Indonesia.
+    </p>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="product-grid container">
+    <div class="card">
+      <img src="images/router1.jpg" alt="Router Wifiku M1" />
+      <div class="card-content">
+        <h3>Router Wifiku M1</h3>
+        <p>Dual-band, jangkauan luas, kecepatan hingga 1Gbps—ideal untuk rumah besar.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/router2.jpg" alt="Router Wifiku M2" />
+      <div class="card-content">
+        <h3>Router Wifiku M2</h3>
+        <p>Beamforming & 4 antena eksternal untuk sinyal terarah & stabil.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/router4.jpg" alt="Router Wifiku M3" />
+      <div class="card-content">
+        <h3>Router Wifiku M3</h3>
+        <p>MU-MIMO untuk streaming & gaming tanpa buffering.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/router3.jpg" alt="Router Wifiku M4" />
+      <div class="card-content">
+        <h3>Router Wifiku M4</h3>
+        <p>Wi-Fi 6: kecepatan tinggi untuk banyak perangkat sekaligus.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/router5.jpg" alt="Router Wifiku E5" />
+      <div class="card-content">
+        <h3>Router Wifiku E5</h3>
+        <p>QoS cerdas—prioritaskan bandwidth sesuai kebutuhan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="container">
+    <h2>Perbandingan Produk Router</h2>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>Produk</th>
+            <th>Keunggulan</th>
+            <th>Spesifikasi Utama</th>
+            <th>Kategori Pengguna</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Wifiku M1</td>
+            <td>Dual-band, jangkauan luas</td>
+            <td>Kecepatan hingga 1Gbps</td>
+            <td>Rumah besar</td>
+          </tr>
+          <tr>
+            <td>Wifiku M2</td>
+            <td>Beamforming, 4 antena</td>
+            <td>Sinyal terarah & stabil</td>
+            <td>Kantor & bisnis kecil</td>
+          </tr>
+          <tr>
+            <td>Wifiku M3</td>
+            <td>MU-MIMO</td>
+            <td>Streaming & gaming lancar</td>
+            <td>Gamer & hiburan</td>
+          </tr>
+          <tr>
+            <td>Wifiku M4</td>
+            <td>Wi-Fi 6</td>
+            <td>Banyak perangkat simultan</td>
+            <td>Smart home & intensif</td>
+          </tr>
+          <tr>
+            <td>Wifiku E5</td>
+            <td>QoS cerdas</td>
+            <td>Kontrol bandwidth</td>
+            <td>Pengguna dasar & kos</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Popular Plans Table -->
+  <section class="container">
+    <h2>Paket Internet Populer</h2>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>Paket</th>
+            <th>Kecepatan</th>
+            <th>Harga/Bulan</th>
+            <th>Cocok Untuk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Wifiku Rumah</td>
+            <td>30 Mbps</td>
+            <td style="color:var(--primary); font-weight:600;">Rp 199.000</td>
+            <td>Streaming & belajar</td>
+          </tr>
+          <tr>
+            <td>Wifiku Bisnis</td>
+            <td>100 Mbps</td>
+            <td style="color:var(--primary); font-weight:600;">Rp 399.000</td>
+            <td>Usaha & kantor</td>
+          </tr>
+          <tr>
+            <td>Wifiku Premium</td>
+            <td>200 Mbps</td>
+            <td style="color:var(--primary); font-weight:600;">Rp 499.000</td>
+            <td>Gamer profesional</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Promo -->
+  <section class="promo container">
+    <p>🎉 Promo spesial Mei 2025: diskon hingga 40% untuk semua router! 🎉 Koneksi stabil & puas, harga terjangkau!</p>
+  </section>
+
+  <!-- Buy Now Button -->
+  <a href="CS.html" class="btn-buy">Beli Sekarang</a>
+</body>
+
+</html>

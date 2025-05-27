@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Halaman Kontak PT Wifiku Indonesia - Hubungi kami melalui WhatsApp atau Telepon.">
+  <title>Kontak Kami - PT Wifiku Indonesia</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #2c97de;
+      --primary-dark: #227db3;
+      --bg: #f4f8fb;
+      --white: #fff;
+      --text: #222;
+      --shadow: 0 4px 24px rgba(44,151,222,0.08);
+      --radius: 12px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .marquee-container {
+      background-color: var(--primary-dark);
+      color: var(--white);
+      font-weight: bold;
+      padding: 10px 0;
+      font-size: 1em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    marquee {
+      width: 100%;
+    }
+
+    header {
+      background: var(--white);
+      box-shadow: var(--shadow);
+      padding: 24px 0 0 0;
+      border-radius: 0 0 var(--radius) var(--radius);
+    }
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header img {
+      max-width: 140px;
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+    }
+    nav {
+      margin: 12px 0 0 0;
+      display: flex;
+      gap: 32px;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.08em;
+      padding: 8px 0;
+      border-bottom: 2px solid transparent;
+      transition: border 0.2s, color 0.2s;
+    }
+    nav a:hover, nav a:focus {
+      color: var(--primary-dark);
+      border-bottom: 2px solid var(--primary-dark);
+    }
+    main.contact-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 420px;
+      margin: 48px auto 0 auto;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 40px 32px 32px 32px;
+    }
+    .contact-info h2:first-of-type {
+      font-size: 2em;
+      font-weight: 600;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, green, blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+    .contact-info h2:last-of-type {
+      font-size: 1.5em;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+   .contact-info h2:last-of-type {
+  font-size: 1.5em;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center; /* Tambahkan baris ini */
+}
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 1.08em;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: var(--radius);
+      margin: 8px 0;
+      box-shadow: 0 2px 8px rgba(44,151,222,0.10);
+      transition: background 0.2s, transform 0.2s;
+      border: none;
+    }
+    .button:hover, .button:focus {
+      background: var(--primary-dark);
+      transform: translateY(-2px) scale(1.03);
+    }
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 1em;
+      border-radius: var(--radius) var(--radius) 0 0;
+      margin-top: 48px;
+      box-shadow: var(--shadow);
+    }
+    @media (max-width: 600px) {
+      main.contact-container {
+        max-width: 98vw;
+        padding: 24px 8px 20px 8px;
+      }
+      .header-inner {
+        padding: 0 8px;
+      }
+      nav {
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Teks Berjalan -->
+  <div class="marquee-container">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      Customer Service kami dengan senang hati siap melayani Anda selama 24 jam!
+    </marquee>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-inner">
+      <img src="images/lebarwifikulogo.jpg" alt="Wifiku Logo" style="box-shadow: 0 2px 12px rgba(44,151,222,0.10); background: #fff;">
+      <nav>
+        <a href="beranda.html">Beranda</a>
+        <a href="produk.html">Produk</a>
+        <a href="CS.html" style="color: var(--primary-dark); border-bottom: 2px solid var(--primary-dark);">CostumerService</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="contact-container">
+    <div class="contact-info">
+      <h2>Hubungi Costumer Service Kami</h2>
+      <h2>PT Wifiku Indonesia</h2>
+      <p>Butuh bantuan atau memiliki pertanyaan? Tim Customer Service kami siap memberikan layanan yang responsif, ramah, dan sepenuh hati kapan pun Anda membutuhkannya.</p>
+    </div>
+    <a href="https://wa.me/628175722142" class="button" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i>
+      Hubungi Kami via WhatsApp
+    </a>
+    <a href="tel:02112345678" class="button">
+      <i class="fas fa-phone"></i>
+      Hubungi Kami via Telepon
+    </a>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 PT Wifiku Indonesia - Semua Hak Dilindungi</p>
+  </footer>
+</body>
+</html>
